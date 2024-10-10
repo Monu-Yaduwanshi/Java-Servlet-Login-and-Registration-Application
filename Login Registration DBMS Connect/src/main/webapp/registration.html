@@ -1,0 +1,111 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Form</title>
+<style>
+ table {
+    margin-left: left;
+    margin-right: left;
+    background-color: yellow;
+    table, th, td {
+	  border: 1px solid black;
+	  border-inline-style:  dotted;
+	  border: 4px solid blue; 
+
+            border-inline-style: solid; 
+
+            background-color: violet;
+	  align-content: center;
+	  height: 50%;
+ } 
+h2 {
+    text-align: left;
+}
+</style>
+</head>
+<body style="background-color: cyan;">
+
+<h2>........Registration Form........</h2>
+
+
+<form action="registration" method="post">
+    <table>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="branch">Branch:</label></td>
+            <td>
+              <select id="branch" name="branch">
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="ECE">ECE</option>
+                <option value="CE">CE</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="semester">Semester:</label></td>
+            <td>
+              <select id="semester" name="semester">
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="hobby">Hobby:</label></td>
+            <td>
+                <input type="checkbox" id="reading" name="hobby1" value="Reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="gaming" name="hobby2" value="Gaming">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="traveling" name="hobby3" value="Traveling">
+                <label for="traveling">Traveling</label>
+                <input type="checkbox" id="cooking" name="hobby4" value="Cooking">
+                <label for="cooking">Cooking</label><br>
+            
+             
+            </td>
+        </tr>
+        <tr>
+	   <td><b>Name</b></td>
+	   <td><input type="text" name="username"/></td>
+	   </tr>
+	 
+	   <tr>
+	   <td><b>Password</b></td>
+	   <td><input type="password" name="password"/>
+	   </tr>
+	
+	
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+   
+    </table>
+</form>
+
+</body>
+</html>
+

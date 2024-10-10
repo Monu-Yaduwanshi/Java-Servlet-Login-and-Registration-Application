@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Registration Form in HTML & CSS | CodingLab</title>
+  <link rel="stylesheet" href="NewFile.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add your custom CSS for the signup form here */
+    /* You can also keep the styles in a separate CSS file and link it */
+
+    /* Styling for the signup form */
+    .signup-form {
+      display: none; /* Hide the signup form by default */
+    }
+
+    /* Styling for the flip checkbox */
+    #flip:checked ~ .forms .signup-form {
+      display: block; /* Show the signup form when flip checkbox is checked */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Every new friend is a <br> new adventure</span>
+          <span class="text-2">Let's get connected</span>
+        </div>
+      </div>
+      <div class="back">
+        <!--<img class="backImg" src="images/backImg.jpg" alt="">-->
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form action="LoginServlet" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="username" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="registration.html">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sign up now</label></div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Signup form -->
+        <div class="signup-form">
+          <div class="title">Signup</div>
+          <form action="registration" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-key"></i>
+                <input type="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <!-- Other input fields for signup form -->
+            </div>
+             <table>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="branch">Branch:</label></td>
+            <td>
+              <select id="branch" name="branch">
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="ECE">ECE</option>
+                <option value="CE">CE</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="semester">Semester:</label></td>
+            <td>
+              <select id="semester" name="semester">
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="hobby">Hobby:</label></td>
+            <td>
+                <input type="checkbox" id="reading" name="hobby1" value="Reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="gaming" name="hobby2" value="Gaming">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="traveling" name="hobby3" value="Traveling">
+                <label for="traveling">Traveling</label>
+                <input type="checkbox" id="cooking" name="hobby4" value="Cooking">
+                <label for="cooking">Cooking</label><br>
+            
+             
+            </td>
+        </tr>
+        <tr align="center";>
+            <div class="button input-box">
+              <input type="submit" value="Submit">
+                </tr>
+          
+          </form>
+        </div>
+        <!-- End of Signup form -->
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
