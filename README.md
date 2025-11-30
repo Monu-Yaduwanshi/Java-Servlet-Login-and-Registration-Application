@@ -63,10 +63,3 @@ Java Servlets Documentation
 MySQL Documentation
 Apache Tomcat Documentation
 Eclipse IDE
-
-### Key Points
-
-- Replace `<repository-url>` with the actual URL of your GitHub repository.
-- Update the GitHub profile link to your username.
-
-This format provides a comprehensive and visually appealing overview of your project, making it easy for users to understand its functionality and how to set it up. Let me know if you need any more adjustments or additions!
